@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>Stock Price Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js')}}"></script> 
+</head>
+<body>
+    <h1>Stock Price Tracker</h1> 
+    <form id="add-ticker-form" class="form-inline">
+        <div class="inputGroup">
+            <input id="new-ticker" name="new-ticker" autocomplete="off" required type="text">
+            <label for="new-ticker">Stocks</label>
+        </div>
+        <button type="submit" class="button">Add</button>
+    </form>
+    <p id="timer">Next update in <span id="counter"></span> seconds.</p> 
+    <div id="tickers-grid"></div>
+</body>
+</html>
