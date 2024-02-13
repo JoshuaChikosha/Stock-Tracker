@@ -40,6 +40,3 @@ This project is licensed under the MIT License
 ## Acknowledgments
 
 - Yahoo Finance for providing real-time stock data.
-
-
-**Note**: This is a sample README. Please update it with your project-specific details.
